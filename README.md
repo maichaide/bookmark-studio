@@ -2,7 +2,10 @@
 
 跨平台、离线运行的浏览器书签整理桌面应用，使用 Rust + egui 开发。 A cross-platform, offline browser bookmark manager desktop application developed with Rust + egui.
 
+## 软件界面 / UI Preview
 
+![Bookmark Studio UI](assets/bookmark01.png)
+![Bookmark Studio UI](assets/bookmark02.png)
 
 ## 功能 / Features
 
