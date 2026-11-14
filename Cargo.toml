@@ -2,8 +2,11 @@
 name = "bookmark-studio"
 version = "0.1.0"
 edition = "2021"
+authors = ["fadongji"]
 description = "Cross-platform offline browser bookmark manager"
 license = "MIT"
+repository = "https://github.com/maichaide/bookmark-studio"
+readme = "README.md"
 
 [dependencies]
 eframe = { version = "0.29", default-features = true }
