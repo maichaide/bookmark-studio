@@ -9,6 +9,7 @@ repository = "https://github.com/maichaide/bookmark-studio"
 readme = "README.md"
 exclude = [
 	"/target/*",
+	"/assets/*",
 	"*.png",
 ]
 
