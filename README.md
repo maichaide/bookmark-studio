@@ -142,3 +142,22 @@ MIT
 ### Chinese font support / 中文字体支持
 
 The application bundles Noto Sans CJK SC and registers it with egui at startup. Chinese UI labels and Chinese bookmark titles therefore do not depend on fonts installed on the host operating system. The font's SIL Open Font License is in `assets/OFL.txt`. 该应用程序打包了 Noto Sans CJK SC，并在启动时向 egui 注册。因此，中文 UI 标签和中文书签标题不依赖于宿主操作系统上安装的字体。该字体的 SIL Open Font License 位于 `assets/OFL.txt` 中。
+
+## 友情提醒
+`FireFox`和`Chrome` 浏览器在处理“移动设备书签”的 HTML 导出时，表现**完全不同**：   
+
+### 1. Google Chrome：**会包含**
+
+- **前提条件**：你的手机端 Chrome 已经登录了 Google 账号并开启了**书签同步**。   
+- **表现**：当手机书签同步到电脑端后，在电脑端 Chrome 的“书签管理器”中会出现一个名为 **“移动设备书签” (Mobile bookmarks)** 的文件夹。当你点击“导出书签”时，Chrome 会把整个个人资料库中的所有内容（书签栏、其他书签、移动设备书签）打包成一个 HTML 文件。因此，导出的 HTML 中是**包含**移动设备书签的。   
+
+### 2. Mozilla Firefox：**默认不包含**
+
+- **表现**：这是 Firefox 的一个已知特性（或限制）。Firefox 的“导出书签到 HTML”功能**默认只会导出“书签菜单”和“书签工具栏”\**里面的内容，而独立存在的“移动设备书签”文件夹是\**不会**被包含在导出的 HTML 文件中的。
+- **如何解决（Firefox 导出移动端书签的方法）**：
+  1. **手动移动/复制**：打开 Firefox 的“管理书签”（Library）窗口，找到“移动设备书签”目录，把里面的文件夹或书签**复制或移动**到“书签菜单”或“书签工具栏”中，然后再执行导出 HTML 操作。   
+  2. **使用 JSON 备份**：如果不通过 HTML 导出，而是使用 Firefox 自带的“备份”（会生成 `.json` 或 `.jsonlz4` 文件），该备份会完整保存包括移动设备书签在内的所有数据。
+  
+
+
+
