@@ -238,5 +238,3 @@ The application bundles Noto Sans CJK SC and registers it with egui at startup. 
   1. **Manual Move/Copy**: Open Firefox's "Manage Bookmarks" (Library) window, locate the "Mobile Bookmarks" folder, and **copy or move** the folders or bookmarks inside it into the "Bookmarks Menu" or "Bookmarks Toolbar" before exporting to HTML.
   2. **Use JSON Backup**: Instead of exporting to HTML, use Firefox's built-in "Backup" feature (which generates a `.json` or `.jsonlz4` file). This backup completely preserves all data, including mobile bookmarks.
 
-[返回中文](https://www.google.com/search?q=%23跨平台浏览器书签整理工具)
-
